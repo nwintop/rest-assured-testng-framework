@@ -5,7 +5,8 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git 'https://github.com/nwintop/rest-assured-testng-framework.git'
+                git branch: 'main',
+                    url: 'https://github.com/nwintop/rest-assured-testng-framework.git'
             }
         }
 
