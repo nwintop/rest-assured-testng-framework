@@ -1,17 +1,11 @@
 pipeline {
-
     agent any
-
-    tools {
-        maven 'Maven'
-    }
 
     stages {
 
         stage('Checkout') {
             steps {
-                git branch: 'main',
-                    url: 'https://github.com/nwintop/rest-assured-testng-framework.git'
+                git 'https://github.com/nwintop/rest-assured-testng-framework.git'
             }
         }
 
@@ -19,12 +13,6 @@ pipeline {
             steps {
                 sh 'mvn clean test'
             }
-        }
-    }
-
-    post {
-        always {
-            junit 'target/surefire-reports/*.xml'
         }
     }
 }
