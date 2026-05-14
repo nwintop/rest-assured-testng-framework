@@ -5,7 +5,10 @@
     <test name="Pet Tests">
 
         <classes>
+
             <class name="tests.PetTests"/>
+            <class name="tests.CreatePetTest"/>
+
         </classes>
 
     </test>

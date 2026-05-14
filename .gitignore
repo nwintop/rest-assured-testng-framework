@@ -1,0 +1,5 @@
+/target/
+/allure-results/
+/.idea/
+/.idea/compiler.xml
+/.idea/misc.xml
